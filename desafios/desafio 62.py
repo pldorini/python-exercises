@@ -1,0 +1,19 @@
+a = int(input('Primeiro termo da PA: '))
+r = int(input('Razao da PA: '))
+t = int(input('Quantos termos quer adicionar na PA? '))
+c = 1
+while c <= t:
+     z = a + (c - 1) * r
+     c += 1
+     print(z, end=', ')
+n = 1
+x = z
+while n != 0:
+    n = int(input('Quantos termos a mais quer analisar? '))
+    d = 1
+    z = x
+    while d <= n:
+         x = z + d * r
+         d += 1
+         print(x, end=', ')
+print('FIM')
